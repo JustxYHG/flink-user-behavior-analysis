@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+allowmixing
+
+left to right direction
+
+package 用户行为分析 {
+    package 热门商品
+    package 流量统计 {
+        class 热门页面统计
+        class PV
+        class UV
+    }
+    package 市场营销指标 {
+        class APP市场推广
+        class 页面广告分析
+    }
+    package 恶意登录
+    package 订单支付 {
+        class 超时失效
+        class 实时对账
+    }
+}
+
+@enduml
